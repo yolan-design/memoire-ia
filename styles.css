@@ -84,7 +84,7 @@ h3 {
 }
 p, span, ul {
     font-size: 1.6em;
-    line-height: 1.15;
+    line-height: 1.2;
 }
 p {
     display: block;
@@ -222,7 +222,7 @@ img {
 .inline-data {
     flex-wrap: wrap;
 }
-.inline-data:not(:nth-child(1)) {
+.inline-data:not(:first-child) {
     margin-top: var(--spacing-space);
 }
 .inline-data > div {
