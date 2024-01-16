@@ -2,18 +2,20 @@
     --bg: #ffffff;
     --txt: #0a0909;
     --gray: #555555;
+
     --vp-min: 780px;
     --vp-min1: calc(var(var(--vp-min)) + 1);
     --paragraph-w: 60%;
     --paragraph-detail-w: clamp(12rem, 20vw, 18rem);
     --border: 1px solid var(--txt);
+
     --global-margin: 2rem;
+    --gap-img: 1rem;
     --spacing-inset: 1.5rem;
-    --spacing-space: 0.75em;
-    --spacing-n0: 1.25rem;
+    --spacing-n0: 1.5rem;
     --spacing-n1: 2.5rem;
     --spacing-n2: 5rem;
-    --gap-img: 1em;
+    --spacing-relative-space: 0.75em;
 }
 @media (max-width: 780px) {
     :root {
@@ -56,10 +58,24 @@ span, p, ul, li {
 
 
 /* FONTS */
+html {
+    font-size: 16px;
+}
 body {
     font-family: "Work Sans", serif;
     font-weight: 500;
-    font-size: 10px;
+    font-size: 1rem;
+}
+
+p, span, ul {
+    font-size: 1em;
+    line-height: 1.2;
+}
+p {
+    display: block;
+}
+p:not(:first-child) {
+    margin-top: 0.5em;
 }
 
 h1, h2, h3, h4, h5 {
@@ -82,16 +98,6 @@ h2 {
 h3 {
     font-size: 3em;
 }
-p, span, ul {
-    font-size: 1.6em;
-    line-height: 1.2;
-}
-p {
-    display: block;
-}
-p:not(:first-child) {
-    margin-top: 0.5em;
-}
 
 ul {
     padding: 0;
@@ -101,7 +107,7 @@ ul > li {
     padding-left: 1em;
 }
 ul > li:not(:first-child) {
-    margin-top: calc(var(--spacing-space) / 2);
+    margin-top: calc(var(--spacing-relative-space) / 2);
 }
 
 b,
@@ -114,22 +120,24 @@ b,
 /* NAV */
 nav {
     z-index: 999;
+    box-sizing: border-box;
+    user-select: none;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
     position: fixed;
     width: 100%;
+    padding: 0 var(--global-margin);
     left: 0;
     top: 0;
     --size: 3rem;
     height: var(--size);
-    font-size: 1.4em;
-    font-weight: 400;
-    padding: 0 var(--global-margin);
-    box-sizing: border-box;
     background-color: var(--bg);
-    user-select: none;
+
+    font-size: 0.9em;
+    font-weight: 400;
+    text-transform: uppercase;
 }
 
 nav .arrow-back svg {
@@ -141,9 +149,16 @@ nav .arrow-back svg {
 }
 
 nav .page-nb {
-    text-transform: uppercase;
-    letter-spacing: 1.5px;
+    letter-spacing: 1.4px;
     color: var(--gray);
+    flex-shrink: 0;
+}
+nav .title {
+    letter-spacing: 1.2px;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+    padding-right: 1.75em;
 }
 
 nav::after {
@@ -222,20 +237,18 @@ img {
 .inline-data {
     flex-wrap: wrap;
 }
-.inline-data:not(:first-child) {
-    margin-top: var(--spacing-space);
+.inline-data > div > :first-child {
+    flex-shrink: 0;
 }
-.inline-data > div {
-    margin-bottom: calc(var(--spacing-space) / 2);
+
+.inline-data:not(:first-child) {
+    margin-top: var(--spacing-relative-space);
 }
 .inline-data > div:not(:last-child) {
     margin-right: var(--spacing-n1);
 }
 .inline-data > div > :last-child {
-    margin-left: var(--spacing-space);
-}
-.inline-data > div > :first-child {
-    flex-shrink: 0;
+    margin-left: var(--spacing-relative-space);
 }
 
 @media (max-width: 780px) {
