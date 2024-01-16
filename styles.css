@@ -226,7 +226,7 @@ img {
     margin-top: var(--spacing-space);
 }
 .inline-data > div {
-    margin-bottom: var(--spacing-space);
+    margin-bottom: calc(var(--spacing-space) / 2);
 }
 .inline-data > div:not(:last-child) {
     margin-right: var(--spacing-n1);
