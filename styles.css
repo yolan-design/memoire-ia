@@ -238,6 +238,12 @@ img {
     flex-shrink: 0;
 }
 
+@media (max-width: 780px) {
+    .inline-data {
+        flex-direction: column;
+    }
+}
+
 
 .img-versus {
     display: flex;
