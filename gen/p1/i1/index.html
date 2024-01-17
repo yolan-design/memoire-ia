@@ -1,16 +1,141 @@
 <!DOCTYPE html>
-<html lang="fr">
+<html lang="fr" translate="no" class="notranslate">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="google" content="notranslate" />
     <meta name="robots" content="noindex">
-    <title>Document</title>
+
+    <link rel="stylesheet" href="/styles.css">
+    <script src="/scripts.js" defer></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Besley:wght@800&family=Work+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+    <title>&nbsp;&nbsp;·&nbsp;&nbsp;Mémoire&nbsp;&nbsp;·&nbsp;&nbsp;IA, ÉVOLUTION & RÊVE-OLUTION</title>
 </head>
 <body>
-    <span id="test">test page</span>
-</body>
 
-<script>
-    document.getElementById("test").innerText = window.location.pathname;
-</script>
+    <nav>
+        <span class="title">Première de couverture</span>
+        <div>
+            <span class="nb-page"></span>
+            <span class="nb-gen"></span>
+        </div>
+    </nav>
+
+
+    <main>
+
+        <section id="head">
+            <img src="gen.jpg" alt="">
+        </section>
+
+
+        <div class="box">
+
+            <div class="inline-data">
+                <div>
+                    <span>Model</span>
+                    <span>Juggernaut XL V8 + RunDiffusion</span>
+                </div>
+                <div>
+                    <span>Lora</span>
+                    <div>
+                        <span>Antimatter</span>
+                        <span>Detail Tweaker</span>
+                    </div>
+                </div>
+                <div>
+                    <span>Sampler</span>
+                    <span>DDIM</span>
+                </div>
+                <div>
+                    <span>Steps</span>
+                    <span>20</span>
+                </div>
+                <div>
+                    <span>CFG</span>
+                    <span>6</span>
+                </div>
+                <div>
+                    <span>Seed</span>
+                    <span>3535417485</span>
+                </div>
+                <div>
+                    <span>Size</span>
+                    <span>512x360</span>
+                </div>
+            </div>
+
+            <div class="inline-data">
+                <div>
+                    <span>Hires upscaler</span>
+                    <span>Latent</span>
+                </div>
+                <div>
+                    <span>Hires upscale</span>
+                    <span>2.8</span>
+                </div>
+                <div>
+                    <span>Hires steps</span>
+                    <span>30</span>
+                </div>
+                <div>
+                    <span>Denoising strength</span>
+                    <span>0.7</span>
+                </div>
+            </div>
+
+            <div class="paragraph-detail">
+                <span>Prompt</span>
+                <div class="paragraph">
+                    <p>masterpiece, high fidelity, highly detailed, Generate an image depicting an AI entity, symbolized as a futuristic eye, exploring the vast spectrum of information beyond human capabilities, with a visual representation of data streams from around the world converging into its central hub. antitech, scifi &#60;lora:AntimatterTech-20:1.5&#62; &#60;lora:add_detail:1.2&#62;</p>
+                </div>
+            </div>
+
+            <div class="paragraph-detail">
+                <span>Negative Prompt</span>
+                <div class="paragraph">
+                    <p>(worst quality, low quality, normal quality, lowres, low details, oversaturated, undersaturated, overexposed, underexposed, grayscale, bw, bad photo, bad photography, bad art:1.4), (watermark, signature, text font, username, error, logo, words, letters, digits, autograph, trademark, name:1.2), (blur, blurry, grainy), morbid, mutated, malformed, mutilated, draft, censored, jpeg artifacts, out of focus, blurry, duplicate, (bad hands, bad anatomy, bad body, bad face, bad teeth, bad arms, bad legs, deformities:1.9)</p>
+                </div>
+            </div>
+
+        </div>
+
+
+        <div class="img-versus">
+            <img src="step gen.jpg" alt="">
+            <img src="step ps expand.jpg" alt="">
+        </div>
+
+
+        <div class="box">
+            <p class="desc">Agrandissement au delà des bordures avec Adobe Photoshop (Firefly).</p>
+        </div>
+
+
+        <div class="box">
+
+            <p class="desc">Rajout de détails avec Krea Enhance.</p>
+
+            <div class="inline-data">
+                <div>
+                    <span>Style</span>
+                    <span>None</span>
+                </div>
+                <div>
+                    <span>AI Strength</span>
+                    <span>0.50</span>
+                </div>
+                <div>
+                    <span>Resemblance Strength</span>
+                    <span>0.70</span>
+                </div>
+            </div>
+
+        </div>
+
+    </main>
+
+</body>
 </html>

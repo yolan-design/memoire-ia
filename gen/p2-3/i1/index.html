@@ -7,10 +7,11 @@
     <meta name="robots" content="noindex">
 
     <link rel="stylesheet" href="/styles.css">
+    <script src="/scripts.js" defer></script>
     <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Besley:wght@800&family=Work+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
 
-    <title>Image Générée&nbsp;&nbsp;·&nbsp;&nbsp;Mémoire&nbsp;&nbsp;·&nbsp;&nbsp;IA, ÉVOLUTION & RÊVE-OLUTION</title>
+    <title>&nbsp;&nbsp;·&nbsp;&nbsp;Mémoire&nbsp;&nbsp;·&nbsp;&nbsp;IA, ÉVOLUTION & RÊVE-OLUTION</title>
 </head>
 <body>
 
@@ -26,7 +27,7 @@
     <main>
 
         <section id="head">
-            <img src="gen2-3.i1.jpg" alt="">
+            <img src="gen.jpg" alt="">
         </section>
 
 
@@ -34,7 +35,7 @@
 
             <div class="inline-data">
                 <div>
-                    <span>Modèle</span>
+                    <span>Model</span>
                     <span>Juggernaut XL V8 + RunDiffusion</span>
                 </div>
                 <div>
@@ -71,6 +72,10 @@
                 <div>
                     <span>Hires steps</span>
                     <span>20</span>
+                </div>
+                <div>
+                    <span>Denoising strength</span>
+                    <span>0.3</span>
                 </div>
             </div>
 
@@ -124,15 +129,6 @@
         </div>
 
     </main>
-
-
-    <script>
-
-        var pageDir = window.location.pathname.split("p")[1].split("/");
-
-        document.querySelector("nav .nb-gen").innerText = "  ·  "+ pageDir[1];
-        document.querySelector("nav .nb-page").innerText = "Page "+ pageDir[0];
-    </script>
 
 </body>
 </html>
