@@ -17,12 +17,15 @@
     --spacing-n2: 5rem;
     --spacing-relative-space: 0.75em;
 }
+html {
+    font-size: 16px;
+}
 @media (max-width: 780px) {
-    :root {
-        --global-margin: 1.25rem;
+    html {
+        font-size: 15px;
     }
-    body {
-        font-size: 8px;
+    :root {
+        --global-margin: 1.15rem;
     }
 }
 body {
@@ -58,9 +61,6 @@ span, p, ul, li {
 
 
 /* FONTS */
-html {
-    font-size: 16px;
-}
 body {
     font-family: "Work Sans", sans-serif;
     font-weight: 500;
