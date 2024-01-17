@@ -7,6 +7,10 @@
     <title>Document</title>
 </head>
 <body>
-    test...
+    <span id="test">test page</span>
 </body>
+
+<script>
+    document.getElementById("test").innerText = window.location.pathname;
+</script>
 </html>
